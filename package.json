@@ -1,0 +1,21 @@
+{
+  "name": "cache-request",
+  "version": "0.0.9",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm publish",
+    "builds": "babel ./ -s -D -d dist --ignore node_modules/*.js"
+  },
+  "keywords": [
+    "http",
+    "cache"
+  ],
+  "author": "gaoyangyang",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "qs": "^6.5.2"
+  },
+  "devDependencies": {}
+}

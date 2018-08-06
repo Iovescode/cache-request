@@ -7,5 +7,5 @@ export async function Context () {
     mode: 'cors',
     cache: true
   })
-  return Response.bind(this)()
+  return Response.bind(Object.assign(Object.create(null), this))()
 }

@@ -10,7 +10,7 @@ Http.create = function (config) {
   this.globalConfig = config
   this.allowMethod.forEach(element => {
     if (!this[element]) {
-      this[element] = Request.bind(this, element)
+      this[element] = Request.bind(Object.assign(Object.create(null), this), element)
     }
   })
 }

@@ -14,4 +14,4 @@ utils.verifyAdapter = function (config) {
     return config
   }
 }
-export default utils
+export default utils  

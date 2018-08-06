@@ -9,7 +9,7 @@ export function Request(...options) {
   that.method = options[0]
   that.url = options[1]
   that.params = that.utils.qs.stringify(options[2])
-  that.url=that.method==="get"? that.url+'?'+that.params :that.url
+  that.url=that.method==="get"? that.url+'?'+that.params :that.url  
   if (!that.allowMethod.includes(that.method)) {
     throw new Error(`暂不支持${that.method}这种请求方式`)
   }
